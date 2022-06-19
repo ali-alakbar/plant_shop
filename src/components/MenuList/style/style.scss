@@ -1,0 +1,64 @@
+@import "../../../App";
+
+// ====================================
+.menu-list-part {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 4rem;
+
+    h1 {
+        color: $--mainHeading;
+        font-size: 36px;
+        text-transform: capitalize;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5em;
+
+        li {
+            font-size: 14px;
+            width: 30vh;
+            text-align: center;
+            border: dashed 1px $--mainLightGray;
+            border-radius: 30px;
+            padding: 15px;
+            cursor: pointer;
+            transition: $--mainTransition  !important;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $--mainHeading;
+
+            &:hover {
+                border: dashed 1px $--maingreenSecond;
+                color: $--maingreenSecond;
+            }
+        }
+    }
+}
+
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .menu-list-part {
+        h1 {
+            font-size: 30px;
+        }
+        ul {
+            li{
+                font-size: 13px;
+                width: 27vh;
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {}

@@ -1,0 +1,40 @@
+@import "../../../App";
+
+
+.products{
+    margin-bottom: 6rem;
+    .container{
+        padding: 0;
+        .item-box-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .link-container{
+            width: 100%;
+            text-align: end;
+            padding: 0 30px;
+        }
+    }
+}
+
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .products {
+        .container {
+            padding: 0 30px;
+        .link-container {
+            text-align: center;
+        }
+        }
+    }
+}

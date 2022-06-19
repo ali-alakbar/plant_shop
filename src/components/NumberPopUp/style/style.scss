@@ -1,0 +1,197 @@
+@import "../../../App";
+
+.popoup-number{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #23232390;
+    z-index: 1000;
+    display: none;
+    .popoup-number-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .pop-number-content{
+            position: relative;
+            background-image: url("../media/bg.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #232323;
+            width:45rem;
+            height: 30rem;
+            transition: $--mainTransitionTwo;
+            transform: scale(.4);
+            opacity: 0;
+            .icon-container{
+                position: absolute;
+                right: 30px;
+                top: 20px;
+                svg{
+                    color: $--mainWhite;
+                    cursor: pointer;
+                    font-size: 20px;
+                    transition: $--mainTransition;
+                    &:hover{
+                        color: $--maingreenSecond;
+                    }
+                }
+            }
+            .other-content{
+                color: $--mainWhite;
+                display: inline-grid;
+                text-align: center;
+                align-content: center;
+                width: 100%;
+                height: 100%;
+                h3,p{
+                    font-family: $--mainFont;
+                }
+                h3{
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 38px;
+                    margin-bottom: 15px;
+                    margin-top: 0;
+                    letter-spacing: .5px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: .5px;
+                    line-height: 24px;
+                    margin-bottom: 3rem;
+                }
+                .share-on{
+                    flex-direction: column-reverse;
+                    gap: 1rem;
+                    margin-bottom: 0;
+                    .right-side{
+                        height: fit-content;
+                        margin-bottom: 0;
+                        #link{
+                            span{
+                                display: none;
+                            }
+                            button{
+                                padding: 0;
+                            }
+                            input{
+                                border-radius: 0px;
+                                color: $--mainWhite;
+                                border: solid 1px #666;
+                                padding: 0.88em;
+                            }
+                        }
+                    }
+                    .left-side{
+                        ul{
+                            li{
+                                a{
+                                    color: $--mainWhite;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    letter-spacing: .5px;
+                                    line-height: 24px;
+                                    text-decoration: none;
+                                    transition: $--mainTransition;
+                                    &:hover{
+                                        color: $--maingreenSecond;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Applied after a period of time
+        .pop-number-content-active {
+             transform: scale(1);
+             opacity: 1;
+         }
+    }
+}
+
+.popoup-number-active{
+    display: block;
+}
+
+
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .popoup-number {
+        .popoup-number-container {
+            .pop-number-content {
+                height: 20rem;
+                .other-content{
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 13px;
+                        margin-bottom: 1rem;
+                    }
+                    .share-on{
+                        .right-side{
+                            #link{
+                                input{
+                                    font-size: 11px;
+                                }
+                                button{
+                                    line-height: 37px;
+                                    width: 60px;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .popoup-number {
+        .popoup-number-container {
+            .pop-number-content {
+                height: 20rem;
+
+                .other-content {
+                    h3 {
+                        font-size: 25px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        margin-bottom: 1rem;
+                    }
+
+                    .share-on {
+                        .left-side{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

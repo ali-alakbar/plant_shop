@@ -1,0 +1,145 @@
+@import "../../../App";
+
+
+.location-section {
+    width: 100%;
+    display: inline-grid;
+    justify-items: center;
+
+    .location-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2em;
+        padding: 50px 0;
+        margin-bottom: 4em;
+        height: fit-content !important;
+
+        .map-container {
+            position: relative;
+            width: 100%;
+
+            .location-map {
+                width: 100%;
+            }
+        }
+
+        .contact-form {
+            padding: 20px;
+
+            .contact-title {
+                h1,p{
+                    font-family: $--mainFont;
+                }
+                h1 {
+                    color: $--mainHeading;
+                    font-size: 42px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    letter-spacing: -1.4px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: $--mainLightGray;
+                    margin-bottom: 50px;
+                }
+            }
+
+            form {
+                display: grid;
+                width: 90%;
+                margin-bottom: -15px;
+
+                input,
+                textarea {
+                    padding: 10px 30px;
+                    font-size: 15px;
+                    color: $--mainLightGray;
+                    border: solid 1px $--mainLight;
+                    border-radius: 8px;
+                    background: $--mainWhite;
+                    margin-bottom: 15px;
+                    transition: border 0.3s ease-in-out;
+
+                    &:hover,
+                    &:focus {
+                        border: solid 1px $--maingreenSecond;
+                    }
+                }
+
+                .textarea-container {
+                    margin-bottom: 5rem;
+
+                    textarea {
+                        resize: vertical;
+                        width: 100%;
+                        height: 100%;
+                        height: 20vh;
+                        max-height: 30vh;
+                        min-height: 10vh;
+                    }
+                }
+
+                button {
+                    @include btn();
+                    width: 20vw;
+                    position: relative;
+                    top: -50px;
+                }
+
+            }
+        }
+    }
+}
+
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Big Screens
+@media (max-width: 1200px) {
+    .location-section {
+        .location-container {
+            display: flex;
+            flex-direction: column;
+
+            .map-container {
+                height: 100vh;
+                margin-bottom: 4em;
+            }
+        }
+    }
+}
+
+
+// Small Screens
+@media (max-width: 768px) {
+    .location-section {
+        .location-container {
+            text-align: center;
+
+            .contact-form {
+                .contact-title {
+                    h1 {
+                        font-size: 37px;
+                    }
+                }
+
+                form {
+                    width: 100%;
+                    justify-items: center;
+
+                    button {
+                        width: 40vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

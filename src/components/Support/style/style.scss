@@ -1,0 +1,81 @@
+@import "../../../App";
+
+.support-section{
+    margin-bottom: 3rem;
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0;
+        .box {
+            width: 30%;
+            text-align: center;
+            // ******* Start on Hover *********
+            &:hover{
+                .icon-container{
+                    img{
+                        transform: rotateY(360deg);
+                    }
+                }
+                .other-content{
+                    h2{
+                        color: $--maingreenSecond;
+                        transform: scale(1.03);
+                    }
+                }
+            }
+            // ******* End on Hover *********
+            .icon-container {
+                img {
+                    transition: $--mainTransition;
+                }
+            }
+            .other-content {
+                h2 {
+                    font-family: $--mainFont;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                    transition: $--mainTransition;
+
+                }
+    
+                p {
+                    line-height: 1.5;
+                    letter-spacing: .5px;
+                    font-size: 14px;
+                    color: $--mainLight;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .support-section {
+        .container {
+            flex-wrap: wrap;
+            .box{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

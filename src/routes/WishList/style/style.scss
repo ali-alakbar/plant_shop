@@ -1,0 +1,232 @@
+@import "../../../App";
+
+
+.wishlist-section {
+    padding-top: 10rem;
+    a {
+        display: block;
+        color: $--maingreen;
+        font-size: 15px;
+        font-weight: 800;
+        margin-bottom: .5em;
+
+        &:hover {
+            color: $--maingreenSecond;
+        }
+    }
+
+    // ======== Start Food Table ========
+
+    .food-table-section {
+        margin-bottom: 5em;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        table {
+            border-spacing: 0;
+            width: 100%;
+            border-collapse: collapse;
+            
+            tr {
+                height: 100%;
+                border-spacing: collapse;
+                &:hover {
+                    background-color: #f2f2f2 !important;
+
+                }
+
+                td {
+                    border: solid 1px $--mainBorder;
+                }
+
+                // --------------
+                // --------------
+                .img-section {
+                    width: 120px;
+                    background-color: #f7f3ee;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                // --------------
+                // --------------
+
+                .food-info-section {
+                    padding: 10px 5px;
+                    width: 65vw;
+
+                    a{
+                        font-weight: 500;
+                    }
+                    .price,
+                    p {
+                        color: $--mainLightGray;
+                        font-weight: 500;
+                        margin-right: 0.5em;
+                    }
+
+                    .discounted-price {
+                        font-weight: 900;
+                        color: $--maingreenSecond;
+                    }
+
+                    p {
+                        margin-top: 5.5px;
+                    }
+
+                }
+
+
+                // --------------
+                // --------------
+
+                .add-cart-section {
+                    padding: 10px 15px;
+                    padding-right: 20px;
+
+                    span {
+                        font-family: $--mainFont;
+                        display: block;
+                        margin-bottom: .5em;
+                        color: $--mainLightGray;
+                    }
+
+                    a {
+                        color: $--maingreenSecond;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: $--maingreenSecond;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // ======== End Food Table ========
+    // ======== Start Share on Section(share the link) ========
+        .share-on {
+            .right-side{
+                height: initial;
+                margin-bottom: 0;
+                #link{
+                    span{
+                        width: 120px;
+                        color: $--maingreen;
+                    }
+                    input{
+                        border-radius: 0;
+                        height: initial !important;
+                        border-color: transparent;
+                        padding: 1rem;
+                        background-color: #fbf7e8;
+                    }
+                    button{
+                        padding: 0;
+                        border-color: transparent;
+                        &:hover{
+                            border-color: transparent;
+                        }
+                    }
+                } 
+
+            } 
+            
+        }
+}
+
+// ==============
+// Start Responsivity
+// ==============
+
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .wishlist-section {
+        .food-table-section {
+            table {
+                tr {
+
+                    // --------------
+                    // --------------
+                    .img-section {
+                        width: 100px;
+                    }
+
+                    // --------------
+                    // --------------
+                    .food-info-section {
+                        width: 50vw;
+                    }
+
+
+                    // --------------
+                    // --------------
+
+                    .add-cart-section {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .wishlist-section {
+        .food-table-section {
+            table {
+                tr {
+
+                    // --------------
+                    // --------------
+                    .food-info-section {
+                        width: 35vw;
+
+                        a {
+                            font-size: 12px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                        }
+
+                        span {
+                            font-size: 13px !important;
+                        }
+                    }
+
+
+                    // --------------
+                    // --------------
+
+                    .add-cart-section {
+                        span {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+
+                        a {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

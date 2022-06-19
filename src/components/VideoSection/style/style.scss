@@ -1,0 +1,151 @@
+@import "../../../App";
+
+.video-section{
+    margin-bottom: 8rem;
+    .container{
+        display: grid;
+        grid-template-columns: auto 50%;
+        grid-auto-flow: dense;
+        direction: rtl;
+        padding: 0;
+        gap: 3rem;
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: end;
+            h2{
+                font-size: 15px;
+                font-weight: normal;
+                font-family: $--mainFont;
+                color: $--mainBorder;
+            }
+            h1{
+                font-size: 30px;
+                line-height: 50px;
+                color: $--maingreen;
+                margin-bottom: 1rem;
+                span{
+                    font-style: italic;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: $--mainLight;
+                margin-bottom: 2rem;
+            }
+            a{
+                @include btn;
+            }
+        }
+        .left-side{
+            position: relative;
+            img{
+                width: 100%;
+                filter: grayscale(60%);
+                transition: all 1.5s ease-in-out;
+            }
+
+            // On hovering, make the image colorful
+            &:hover{
+                img{
+                    filter: grayscale(0%);
+                }
+            }
+
+            // Video Animation
+            a {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                width: 5.5rem;
+                height: 5.5rem;
+                border-radius: 50%;
+                margin-bottom: 3rem;
+                transition: all 0.2s ease-in-out;
+                box-shadow: 0 0 0 2px rgb(255, 255, 255);
+                background: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+                    border-radius: 200%;
+                    z-index: -1;
+                    transform: scale(1);
+                    pointer-events: none;
+                    animation: borderMoving 2s infinite;
+                }
+            }
+        }
+    }
+}
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {
+    .video-section{
+        .container{
+            .right-side{
+                a {
+                    line-height: 45px;
+                    padding: 0px 35px;
+                }
+            }
+        }
+    }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .video-section {
+        .container {
+            .right-side{
+                h1{
+                    font-size: 23px;
+                }
+                p,
+                h2 {
+                    font-size: 15px;
+                }
+            }
+            .left-side{
+                img{
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .video-section {
+        .container {
+            grid-auto-rows: auto auto;
+            grid-template-columns: none;
+            padding: 0 30px;
+            .right-side {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

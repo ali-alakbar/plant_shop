@@ -1,0 +1,324 @@
+@import "../../../App";
+
+.checkout-section {
+    .coupon-container {
+        padding: 0;
+        width: 95%;
+
+        .bar-section {
+            margin-bottom: 10em;
+
+            .coupon-bar {
+                margin-top: 0;
+                margin-bottom: 30px;
+                background-color: #3d9cd2;
+                padding: 1em 1.618em;
+                border-radius: 2px;
+                color: #fff;
+                clear: both;
+                border-left: .6180469716em solid rgba(0, 0, 0, .15);
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    background: rgba(0, 0, 0, .15);
+                    z-index: -1;
+                    transition: transform .9s;
+                }
+
+                &:hover {
+                    &::after {
+                        transform: scaleX(1);
+                    }
+                }
+
+
+
+
+                p {
+                    display: inline-block;
+                    margin-right: 0.5em;
+                }
+
+                .enter-code {
+                    color: $--mainWhite;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $--mainBorder
+                    }
+                }
+            }
+
+            .coupon-input-section {
+                transition: $--mainTransition;
+                height: 0;
+                line-height: 0;
+                opacity: 0;
+                padding: 0;
+
+                h4 {
+                    margin: 0 0 1em;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $--mainLightGray;
+                }
+
+                .input-container {
+                    display: flex;
+                    justify-content: start;
+                    gap: 1em;
+
+                    input {
+                        width: 50%;
+                        border: solid 1px $--mainBorder;
+                        color: $--mainLightGray;
+                        padding: 1em 1.5em;
+                        transition: $--mainTransition;
+
+                        &:hover,
+                        &:focus {
+                            border: solid 1px $--maingreenSecond;
+                        }
+                    }
+
+                    button {
+                        @include btn();
+                        width: 18vw;
+                        border-radius: 0;
+                    }
+                }
+            }
+
+            .coupon-input-section-active {
+                height: fit-content;
+                opacity: 1;
+                padding: inherit;
+                line-height: 4;
+            }
+        }
+
+        .billing-container {
+            display: grid;
+            grid-template-columns: 50% auto;
+
+            .leftSide {
+                padding: 30px;
+
+                .billing-section {
+                    margin-bottom: 5em;
+                    @include input();
+
+                    h2 {
+                        color: $--mainHeading;
+                        clear: both;
+                        font-size: 1.618em;
+                        margin-bottom: 2.5em;
+
+                    }
+
+                }
+
+                .special-address {
+                    display: grid;
+                    margin-bottom: 5em;
+
+                    h2 {
+                        font-size: 25px;
+                        font-weight: 500;
+                        color: $--mainHeading;
+                        margin-bottom: 1em;
+                    }
+
+                    label {
+                        font-size: 15px;
+                        margin-bottom: .7em;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        padding: 1em 2em;
+                        resize: vertical;
+                        max-height: 40vh;
+                        min-height: 20vh;
+                        color: $--mainLightGray;
+                        border: solid 1px $--mainBorder;
+                    }
+                }
+            }
+
+            .rightSide {
+                padding: 20px 35px 40px;
+                position: relative;
+                border: 6px solid $--mainBorder;
+                height: fit-content;
+
+                h2 {
+                    margin-bottom: 2em;
+
+                }
+
+                .product {
+                    padding: 20px;
+
+                    .row {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: solid 1px $--mainBorder;
+                        padding-bottom: 1em;
+                        margin-bottom: 1em;
+
+                        h3 {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .product-info {
+                        display: grid;
+
+                        .row-product {
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .row {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .shipping {
+                            .shipping-type {
+                                .input-container {
+                                    gap: .7em;
+                                    margin-bottom: .4em;
+
+                                    label,
+                                    input {
+                                        cursor: pointer;
+                                    }
+
+                                    label {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: 100%;
+                                        gap: 0.5em;
+                                    }
+
+                                    span {
+                                        font-weight: bold;
+                                        margin-left: .4em;
+                                    }
+                                }
+                            }
+                        }
+
+                        .total {
+                            display: flex;
+                            justify-content: space-between;
+
+                            h2 {
+                                font-weight: 700;
+                                font-size: 26px;
+                                color: $--maingreenSecond;
+                            }
+                        }
+
+                        .payment-details {
+                            border-bottom: solid 1px $--mainBorder;
+                            padding-bottom: 1em;
+                            margin-bottom: 1em;
+
+                            .row {
+                                border-bottom: none;
+                                display: grid;
+                                gap: 1em;
+
+                                .input-container {
+                                    display: flex;
+                                    flex-direction: row-reverse;
+                                    justify-content: start;
+
+                                    label {
+                                        display: flex;
+                                        flex-direction: row-reverse;
+                                        justify-content: start;
+                                        padding: 10px 20px;
+                                        gap: 1em;
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+
+                            .hidden-details {
+                                font-size: 14px;
+                                line-height: 0px;
+                                opacity: 0;
+                                transition: $--mainTransition;
+                                color: $--mainLightGray;
+                            }
+
+                            .active-details {
+                                opacity: 1;
+                                line-height: 30px;
+                            }
+                        }
+
+                        .policy {
+                            color: $--mainLightGray;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1.7;
+                            margin-bottom: 2em;
+
+                            a {
+                                color: $--maingreenSecond;
+
+                                &:hover {
+                                    color: $--maingreenSecond;
+                                }
+                            }
+                        }
+
+                        .proceed-btn {
+                            @include btn();
+                            font-size: 15px !important;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Medium Screens
+@media (max-width: 992px) {
+    .checkout-section {
+        .coupon-container {
+            margin-bottom: 7em;
+
+            .billing-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

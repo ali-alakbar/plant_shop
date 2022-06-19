@@ -1,0 +1,80 @@
+@import "../../../App";
+
+.plants-bar-section{
+    margin-bottom: 5rem;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+        .plants-box{
+            text-align: center;
+            .img-container{
+                margin-bottom: 1rem;
+                position: relative;
+                width: 180px;
+                height: 180px;
+                
+                
+                img{
+                    width: initial;
+                    border-radius: 50%;
+                    transition: $--mainTransition;
+                }
+                .noHover{
+                    position: relative;
+                    opacity: 1;
+                    z-index: 10;
+                }
+                .onHover{
+                    position: absolute;
+                    left: 0;
+                    opacity: 0;
+                    width: 180px;
+                }
+            }
+            h3{
+                color: $--mainHeading2;
+                font-size: 16px;
+                font-weight: 500;
+                transition: $--mainTransition;
+            }
+            &:hover{
+                h3{
+                    color: $--maingreenSecond;
+                }
+                .img-container {
+                    
+                    .noHover {
+                        opacity: 0;
+                    }
+                    .onHover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+/* Medium Screens */
+@media (max-width: 992px) {}
+/* Small Screens */
+@media (max-width: 768px) {
+    .plants-bar-section {
+        .container {
+            gap: 4rem;
+        }
+    }
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

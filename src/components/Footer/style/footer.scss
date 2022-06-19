@@ -1,0 +1,231 @@
+@import "../../../App";
+
+.footer-section {
+    position: relative;
+    background-image: url("../media/footer-background_0db35e07-eb20-4158-8ecb-64d075196a33.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+    .footer-section-one {
+        background-image: url("../media/dots.png");
+        background-repeat: repeat;
+        position: relative;
+        padding: 6em 0;
+
+        .logoContainer {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            z-index: 10;
+            margin-bottom: 5rem;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+
+            .box_of_info {
+                @include box_of_info_function();
+
+                .contact-info {
+                    color: $--maingreenSecond;
+                    font-size: 18px;
+                    font-family: $--mainFont;
+                }
+
+                // Social Media
+                .social-media {
+                    ul {
+                        display: flex;
+                        gap: .4em;
+
+                        li {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: rgba($--maingreenSecond, 0.5);    
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            border: 1px solid transparent;
+                            cursor: pointer;
+                            transition: $--mainTransition;
+
+                            &:hover {
+                                background-color: $--maingreenSecond;
+                            }
+                            svg{
+                                color: $--mainBorder2;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .sending-email{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 3rem 0;
+            .box_of_info{
+                color: $--mainWhite;
+                p,h2{
+                    font-family: $--mainFont;
+                }
+                .header-address,.additional-info{
+                    text-transform: capitalize;
+                    margin-bottom: .5rem;
+                }
+                .additional-info{
+                    color: $--mainLight;
+                }
+            }
+            .subscribe {
+                position: relative;
+                width: 400px;
+                justify-content: flex-end;
+                input {
+                    padding: 15px;
+                    border: solid 1px transparent;
+                    line-height: 1.4;
+                    font-size: 15px;
+                    width: 100%;
+                    border-radius: 20px 0 0 20px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    color: $--mainWhite;
+                    height: initial !important;
+                }
+    
+                button {
+                    @include btn;
+                    background-color: rgba($--maingreenSecond, 0.5);
+                    cursor: pointer;
+                    color: $--mainWhite;
+                    border: solid 1px transparent;
+                    width: 250px;
+                    padding: 0;
+                    border-radius: 0 20px 20px  0;
+                }
+            }
+        }
+    }
+
+    .footer-section-two {
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 15vh;
+        padding: 0 2em;
+        align-items: center;
+        background-color: transparent;
+        border-top: solid 1px $--mainBorder;
+        color: $--mainWhite;
+        font-size: 14px;
+        font-weight: 500;
+
+        .right-reserved {
+            font-family: $--mainFont;
+            color: $--mainLight;
+            a {
+                color: $--maingreenSecond;
+            }
+        }
+
+        .payment-methods {
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+// ==============
+// Start Responsivity
+// ==============
+
+/* Big Screens */
+@media (max-width: 1200px) {
+    .footer-section {
+        .footer-section-one {
+            .container {
+                .box_of_info {
+                    .subscribe {
+                        input {
+                            height: 5vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* medium Screens */
+@media (max-width: 992px) {
+    .footer-section {
+        .footer-section-one {
+            .container {
+                flex-wrap: wrap;
+
+                .box_of_info {
+                    margin-bottom: 5rem;
+                    width: 30vw;
+
+                    .subscribe {
+                        button{
+                            padding: 0;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .footer-section {
+        .footer-section-one {
+            .container {
+                padding: 0 80px;
+
+                .box_of_info {
+                    width: 100%;
+
+                    .subscribe {
+                        width: 100%;
+                        padding: 0 20px;
+                        input{
+                            height: initial;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .footer-section-two {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 22px;
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

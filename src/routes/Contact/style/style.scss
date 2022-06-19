@@ -1,0 +1,24 @@
+@import "../../../App";
+
+.contact-sction{
+    .heading-landing{
+        min-height: 300px;
+    }
+}
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .contact-sction {
+        .location-container{
+            margin-bottom: 0;
+        }
+    }
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

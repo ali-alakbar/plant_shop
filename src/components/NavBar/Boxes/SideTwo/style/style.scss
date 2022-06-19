@@ -1,0 +1,99 @@
+@import "../../../../../App";
+
+// ============================
+// Stylling Second Side
+// ============================ 
+
+.side-2 {
+    order: 2;
+
+    ul {
+        display: flex;
+        gap: 1em;
+        position: relative;
+
+        .hidden-links{
+            display: none;
+        }
+        li {
+            padding: .5em;
+            transition: $--mainTransition;
+            background-color: transparent;
+            a {
+                position: relative;
+                svg {
+                    font-size: 20px;
+                    color: $--maingreen;
+                }
+            }
+        }
+        // Separator
+        .separator {
+            position: absolute;
+            right: 50%;
+            transform: translateX(-50%);
+            top: .6rem;
+            height: 3.5vh;
+            width: 1px;
+            background-color: $--mainLightGray;
+        }
+    }
+}
+
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .side-2 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        ul {
+            gap: 0;
+            .hidden-links {
+                display: flex;
+                // For phone icon
+                svg{
+                    color: $--mainBorder;
+                }
+            }
+        .separator {
+            display: none;
+        }
+            li{
+                position: relative;
+                align-items: center;
+                border: 1px solid #e5e5e5;
+                border-radius: 0;
+                width: 100%;
+                height: 4.235801032em;
+                background-color: $--mainWhite;
+                cursor: pointer;
+                display: inline-flex;
+                justify-content: center;
+                line-height: 50px;
+                font-size: 18px;
+                position: relative;
+                // On hover disabled
+                &:hover {
+                    transform: inherit !important
+                }
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

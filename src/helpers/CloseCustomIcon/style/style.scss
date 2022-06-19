@@ -1,0 +1,43 @@
+@import "../../../App";
+
+
+.custom-icon-container {
+    position: relative;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    .custom-icon {
+        position: absolute;
+        display: inline-block;
+        height: 2px;
+        width: 15px;
+        background-color: $--mainBlack;
+        transition: $--mainTransition;
+    }
+
+    .line-one {
+        transform: rotate(45deg);
+    }
+
+    .line-two {
+        transform: rotate(130deg);
+    }
+
+    &:hover {
+        .custom-icon {
+            background-color: $--maingreenSecond;
+        }
+
+        .line-one {
+            transform: rotate(0deg);
+        }
+
+        .line-two {
+            transform: rotate(180deg);
+        }
+    }
+}

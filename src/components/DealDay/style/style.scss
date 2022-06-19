@@ -1,0 +1,153 @@
+@import "../../../App";
+
+.deal-of-day{
+    margin-bottom: 6rem;
+    .container{
+        .content-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-auto-flow: dense;
+            direction: ltr;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            .right-side{
+                a{
+                    display: block;
+                    color: $--mainHeading;
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    margin-bottom: 2rem;
+                    &:hover{
+                        color: $--maingreenSecond;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    color: $--mainLightGray;
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-bottom: 3rem;
+                }
+                .price-container{
+                    justify-content: flex-start;
+                    span{
+                        font-family: $--mainFont;
+                        font-size: 19px;
+                    }
+                }
+                .timer-wrapper{
+                
+                    font-family: $--mainFont;
+                    font-size: 18px;
+                    background-color: #f4f4f4;
+                    color: $--maingreen;
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    padding: 10px 20px;
+                    .border{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                        gap: 2rem;
+                        .count{
+                            background-color: transparent !important;
+                        }
+                    }
+                }
+            }
+            .left-side{
+                display: grid;
+                gap: 1rem;
+                .img-left{
+                    border: solid 1px $--mainBorder2;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: $--mainTransition;
+                    &:hover{
+                        border: solid 1px $--maingreenSecond;
+                    }
+                    img{
+                        width: 100%;
+                        min-height: 250px;
+                    }
+                }
+                .img-container-parent{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    gap: 1rem;
+                    .img-container{
+                        border: solid 1px $--mainBorder2;
+                        overflow: hidden;
+                        &:hover{
+                            border: solid 1px $--maingreenSecond;
+                            img{
+                                transform: scale(1.6) rotate(-10deg);
+                            }
+                        }
+                        img {
+                            transform: scale(1);
+                            width: 150px;
+                            transition: $--mainTransitionTwo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Big Screens */
+@media (max-width: 1200px) {
+    .deal-of-day {
+        .container {
+            .content-wrapper {
+                display: grid;
+                grid-template-columns: auto 50%;
+                .left-side{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .deal-of-day {
+        .container {
+            padding: 0 30px;
+            .content-wrapper {
+                grid-template-columns: unset;
+                grid-template-rows: auto auto;
+                // For stylling the content
+                .right-side {
+                    display: inline-grid;
+                    justify-content: center;
+                    text-align: center;
+                    justify-items: center;
+                    p{
+                        margin-bottom: initial;
+                    }
+                }
+                // For stylling the images
+                .img-container-parent {
+                    .img-container{
+                        width: 100%;
+                        img{
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {}

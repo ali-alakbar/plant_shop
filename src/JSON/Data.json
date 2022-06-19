@@ -1,0 +1,482 @@
+{
+    "landingPage":[
+        {
+            "h2_one": "Uncomplicate",
+            "h2_two": "indoor",
+            "h2_span": "gardening.",
+            "p_one":"From Modern Sprout’s clever grow kits to Laila Solomon’s handmade ceramic planters, discover the",
+            "p_two":"products created by talented artisans and curated by us in our Fall Collection.",
+            "img":"./media/slider-1.jpg"
+        },
+        {
+            "h2_one": "Buy a planter,",
+            "h2_two": "get a ",
+            "h2_span": "grow light free!",
+            "p_one":"From Modern Sprout’s clever grow kits to Laila Solomon’s handmade ceramic planters, discover the",
+            "p_two":"products created by talented artisans and curated by us in our Fall Collection.",
+            "img":"./media/slider-3.jpg"
+        },
+        {
+            "h2_one": "Give the Gift",
+            "h2_two": "of",
+            "h2_span": "Greenery.",
+            "p_one":"From Modern Sprout’s clever grow kits to Laila Solomon’s handmade ceramic planters, discover the",
+            "p_two":"products created by talented artisans and curated by us in our Fall Collection.",
+            "img":"./media/slider-2.jpg"
+        }
+    ],
+    "plantsProducts":[
+        {
+            "img": "media/img-1.webp",
+            "h3":"Aloevera Plant"
+        },
+        {
+            "img": "media/img-2.webp",
+            "h3":"Cactus Plant"
+        },
+        {
+            "img": "media/img-3.webp",
+            "h3":"Peace Lily"
+        },
+        {
+            "img": "media/img-4.webp",
+            "h3":"Jade Plant"
+        }
+    ],
+    "FAQ":[
+        {
+            "question": "How does this work?",
+            "answer":"Simply put, we deliver your favourite menu from fast-food restaurant of choice. Our platform enables you to enter your postcode and select a nearby restaurant of choice e.g McDonalds, KFC, …Wagamama e.t.c for delivery. Within each of these restaurants you will find their menus which you can add to basket, choose your payment method (PayPal or Credit / Debit Card) and submit. There you go, your order is sent to the selected restaurant or the nearby delivery driver where applicable."
+        },
+        {
+            "question": "How do I take away my order?",
+            "answer":"Simply put, we deliver your favourite menu from fast-food restaurant of choice. Our platform enables you to enter your postcode and select a nearby restaurant of choice e.g McDonalds, KFC, …Wagamama e.t.c for delivery. Within each of these restaurants you will find their menus which you can add to basket, choose your payment method (PayPal or Credit / Debit Card) and submit. There you go, your order is sent to the selected restaurant or the nearby delivery driver where applicable."
+        }
+        ,
+        {
+            "question": "Can I order from different location?",
+            "answer":"Simply put, we deliver your favourite menu from fast-food restaurant of choice. Our platform enables you to enter your postcode and select a nearby restaurant of choice e.g McDonalds, KFC, …Wagamama e.t.c for delivery. Within each of these restaurants you will find their menus which you can add to basket, choose your payment method (PayPal or Credit / Debit Card) and submit. There you go, your order is sent to the selected restaurant or the nearby delivery driver where applicable."
+        },
+        {
+            "question": "Are your menu prices the same as those at the resturant?",
+            "answer":"Simply put, we deliver your favourite menu from fast-food restaurant of choice. Our platform enables you to enter your postcode and select a nearby restaurant of choice e.g McDonalds, KFC, …Wagamama e.t.c for delivery. Within each of these restaurants you will find their menus which you can add to basket, choose your payment method (PayPal or Credit / Debit Card) and submit. There you go, your order is sent to the selected restaurant or the nearby delivery driver where applicable."
+        },
+        {
+            "question": "Where are you located?",
+            "answer":"Simply put, we deliver your favourite menu from fast-food restaurant of choice. Our platform enables you to enter your postcode and select a nearby restaurant of choice e.g McDonalds, KFC, …Wagamama e.t.c for delivery. Within each of these restaurants you will find their menus which you can add to basket, choose your payment method (PayPal or Credit / Debit Card) and submit. There you go, your order is sent to the selected restaurant or the nearby delivery driver where applicable."
+        }
+    ],
+    "brandLogo":[
+        {
+            "img":"Brand-Logo-1.webp",
+            "duration":500
+            
+        },
+        {
+            "img":"Brand-Logo-2.webp",
+            "duration":600
+            
+        },
+        {
+            "img":"Brand-Logo-3.webp",
+            "duration":700
+            
+        },
+        {
+            "img":"Brand-Logo-4.webp",
+            "duration":900
+            
+        },
+        {
+            "img":"Brand-Logo-5.webp",
+            "duration":1000
+            
+        },
+        {
+            "img":"Brand-Logo-6.webp",
+            "duration":1100
+            
+        }
+    ],
+    "images":[
+        {
+            "dir":"right",
+            "img":"img-section-1.jpg"
+        },
+        {
+            "dir":"up",
+            "img":"img-section-2.jpg"
+        },
+        {
+            "dir":"left",
+            "img":"img-section-3.jpg"
+        }
+    ],
+    "howitWorksSection":[
+
+        {
+            "img":"leaf.png",
+            "duration":500,
+            "text":"Pick your plants",
+            "toDownArrow": true
+
+        },
+        {
+            "img":"plant.png",
+            "duration":900,
+            "text":"Choose a pot color",
+            "toDownArrow": false
+        },
+        {
+            "img":"box.png",
+            "duration":1100,
+            "text":"Have it shipped",
+            "toDownArrow": true
+        }
+        ,
+        {
+            "img":"watering-can.png",
+            "duration":1300,
+            "text":"Watch it grow",
+            "toDownArrow": false
+        }
+    ],
+    "plantsBar":[
+        {
+            "img": "categories-1.jpg",
+            "hoverImg":"hover1.webp",
+            "h3" : "Air Purifying",
+            "duration":"600"
+        },
+        {
+            "img": "categories-2.jpg",
+            "hoverImg":"hover2.webp",
+            "h3" : "Ceramic Pots",
+            "duration":"700"
+        },
+        {
+            "img": "categories-3.jpg",
+            "hoverImg":"hover3.webp",
+            "h3" : "Herb Seeds",
+            "duration":"800"
+        },
+        {
+            "img": "categories-4.jpg",
+            "hoverImg":"hover4.webp",
+            "h3" : "Indoor Plants",
+            "duration":"1200"
+
+        },
+        {
+            "img": "categories-5.jpg",
+            "hoverImg":"hover5.webp",
+            "h3" : "Low Maintenance",
+            "duration":"1300"
+        },
+        {
+            "img": "categories-6.jpg",
+            "hoverImg":"hover6.webp",
+            "h3" : "Plant Boundle",
+            "duration":"1400"
+        }
+    ],
+    "quote": [
+        {
+            "rating":3,
+            "q":"Green Thumb, black thumb, doesn't matter. Thanks Buddy!!",
+            "name":"Franco"
+        },
+        {
+            "rating":4,
+            "q":"Very happy with flacio; plants arrived in excellent condition, were healthy... ",
+            "name":"Franco"
+        },
+        {
+            "rating":5,
+            "q":"Green Thumb, black thumb, doesn't matter. Thanks Buddy!!",
+            "name":"Franco"
+        },
+        {
+            "rating":5,
+            "q":"Very happy with flacio; plants arrived in excellent condition, were healthy...",
+            "name":"Franco"
+        }
+    ],
+    "products": [
+        {
+        "rating": 2,    
+        "icon": "1.webp",
+        "icon2": "10.webp",
+        "icon3": "item1.jpg",
+        "icon4": "item1e.jpg",
+        "foodTitle": "After decaf phone case",
+        "idDiscount": false,
+        "price": 5,
+        "discountPrice": 100,
+        "isWhite": true,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 2,    
+        "icon": "2.webp",
+        "icon2": "9.webp",
+        "icon3": "item2.jpg",
+        "icon4": "item2e.jpg",
+        "foodTitle": "Backpack double strap",
+        "idDiscount": true,
+        "price": 35,
+        "discountPrice": 80,
+        "isWhite": false,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 4,    
+        "icon": "3.webp",
+        "icon2": "8.webp",
+        "icon3": "item3.jpg",
+        "icon4": "item3e.jpg",
+        "foodTitle": "Printed long type skirt",
+        "idDiscount": false,
+        "price": 3,
+        "discountPrice": 100,
+        "isWhite": true,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 5,    
+        "icon": "4.webp",
+        "icon2": "7.webp",
+        "icon3": "item3.jpg",
+        "icon4": "item3e.jpg",
+        "foodTitle": "Black umbrella in handle",
+        "idDiscount": true,
+        "price": 23,
+        "discountPrice": 80,
+        "isWhite": false,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 1,    
+        "icon": "5.webp",
+        "icon2": "6.webp",
+        "icon3": "item2.jpg",
+        "icon4": "item2e.jpg",
+        "foodTitle": "Black umbrella in handle",
+        "idDiscount": false,
+        "price": 3,
+        "discountPrice": 100,
+        "isWhite": true,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 3,    
+        "icon": "6.webp",
+        "icon2": "5.webp",
+        "icon3": "item2.jpg",
+        "icon4": "item2e.jpg",
+        "foodTitle": "After decaf phone case",
+        "idDiscount": true,
+        "price": 23,
+        "discountPrice": 80,
+        "isWhite": false,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 5,    
+        "icon": "7.webp",
+        "icon2": "4.webp",
+        "icon3": "item1.jpg",
+        "icon4": "item1e.jpg",
+        "foodTitle": "Backpack double strap",
+        "idDiscount": false,
+        "price": 5,
+        "discountPrice": 100,
+        "isWhite": true,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 5,    
+        "icon": "8.webp",
+        "icon2": "3.webp",
+        "icon3": "item2.jpg",
+        "icon4": "item2e.jpg",
+        "foodTitle": "Black umbrella in handle",
+        "idDiscount": false,
+        "price": 3,
+        "discountPrice": 100,
+        "isWhite": true,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 5,    
+        "icon": "9.webp",
+        "icon2": "2.webp",
+        "icon3": "item3.jpg",
+        "icon4": "item3e.jpg",
+        "foodTitle": "After decaf phone case",
+        "idDiscount": true,
+        "price": 23,
+        "discountPrice": 80,
+        "isWhite": false,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        },
+        {
+        "rating": 4,    
+        "icon": "10.webp",
+        "icon2": "1.webp",
+        "icon3": "item1.jpg",
+        "icon4": "item1e.jpg",
+        "foodTitle": "Backpack double strap",
+        "idDiscount": false,
+        "price": 5,
+        "discountPrice": 100,
+        "isWhite": true,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquam adipisci. Repudiandae pariatur autem asperiores recusandae reprehenderit mollitia maxime inventore aliquam explicabo placeat! Nostrum labore corporis vero rerum, eveniet quasi."
+        }
+    ],
+    "instaImages":[
+        {
+            "img": "ig-2.jpg",
+            "duartion": "400"
+        },
+        {
+            "img": "ig-9.jpg",
+            "duartion": "800"
+        },
+        {
+            "img": "ig-7.jpg",
+            "duartion": "400"
+        },
+        {
+            "img": "ig-3.jpg",
+            "duartion": "800"
+        }
+        
+    ],
+    "support":[
+        {
+            "img":"1.webp",
+            "h2":"Free Delivery",
+            "p" : "Free delivery on all orders over $50"
+        },
+        {
+            "img":"2.webp",
+            "h2":"24X7 SUPPORT",
+            "p" : "Lorem Ipsum Simply Dummy"
+        },
+        {
+            "img":"3.webp",
+            "h2":"Grant Saving",
+            "p" : "Lorem Ipsum Simply Dummy"
+        }
+    ],
+    "headingLanding":[
+        {
+            "img":"categories-7.jpg",
+            "title":"Indoor Plants"
+        },
+        {
+            "img":"categories-8.jpg",
+            "title":"Low Maintenance"
+        },
+        {
+            "img":"categories-10.jpg",
+            "title":"Plant Bundle"
+        },
+        {
+            "img":"categories-11.jpg",
+            "title":"Ceramic Pots"
+        },
+        {
+            "img":"categories-12.jpg",
+            "title":"Indoor Plants"
+        }
+    ],
+     "posts":[
+      {
+        "img":"/media/blog-2-1000x565.jpg",
+        "small_img":"10.webp",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"Sep 7, 2020",
+        "title":"Infoor Plants",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-6-1000x565.jpg",
+        "small_img":"9.webp",
+        "postBy":"namdam",
+        "isThreeHide": false,
+        "date":"June 12, 2020",
+        "title":"Low mantenace",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-7-1000x565.jpg",
+        "small_img":"8.webp",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"Oct 15, 2020",
+        "title":"Low mantenace",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-9-1000x565.jpg",
+        "small_img":"3.webp",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"March 27, 2022",
+        "title":"Plant",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-6-1000x565.jpg",
+        "small_img":"4.webp",
+        "postBy":"namdam",
+        "isThreeHide": false,
+        "date":"June 12, 2020",
+        "title":"Low mantenace",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-7-1000x565.jpg",
+        "small_img":"5.webp",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"Oct 15, 2020",
+        "title":"Low mantenace",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      },
+      {
+        "img":"/media/blog-9-1000x565.jpg",
+        "small_img":"1.webp",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"March 27, 2022",
+        "title":"Plant",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      }
+      ,
+      {
+        "img":"/media/blog-2-1000x565.jpg",
+        "small_img":"6.webp",
+        "postBy":"namdam",
+        "isThreeHide": true,
+        "date":"March 27, 2022",
+        "title":"Plant",
+        "details":"Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo."
+      }
+    ],
+    "categories":[
+      {
+        "plantName":"Plant"
+      },
+      {
+        "plantName":"Indoor Plant"
+      },
+      {
+        "plantName":"Low Maintance"
+      }
+    ]
+
+}

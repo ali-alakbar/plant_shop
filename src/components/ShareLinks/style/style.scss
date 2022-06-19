@@ -1,0 +1,59 @@
+@import "../../../App";
+
+// ======== Start Share Links ========
+.share-on {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5em;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .left-side {
+        display: flex;
+
+        span {
+            margin-right: 1em;
+            color: $--mainLightGray;
+        }
+
+        ul {
+            display: flex;
+            gap: .5em;
+
+        }
+    }
+
+    .right-side {
+        #link {
+            height: 9vh;
+            display: flex;
+            align-items: center;
+
+            span {
+                color: $--mainLightGray;
+                width: 100px;
+            }
+
+            input {
+                font-size: 15px;
+                padding: .68em 1em;
+                background-color: transparent;
+                color: $--mainLightGray;
+                border: solid 1px $--mainBorder;
+                font-weight: 500;
+                border-radius: 20px;
+                outline: 0;
+            }
+
+            button {
+                @include btn;
+                width: 100px;
+            }
+        }
+    }
+
+}
+
+// ======== End Share Links ========

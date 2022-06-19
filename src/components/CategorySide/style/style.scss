@@ -1,0 +1,184 @@
+@import "../../../App";
+
+// Start Mixin
+
+@mixin heading {
+    color: $--mainHeading;
+    font-size: 20px;
+    margin-bottom: 1em;
+    padding: 10px;
+}
+
+.left-side {
+    flex: 1;
+
+    // Start Input
+    .input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 7vh;
+        margin-bottom: 3em;
+
+        input {
+            width: 100%;
+            height: 100%;
+            background-color: #fbf7e8;
+            border: solid 1px #fbf7e8;
+            padding-left: 1.7em;
+            padding-right: 7em;
+            // color: $--mainLightGray;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+            position: relative;
+            right: 0px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            background-color: $--maingreenSecond;
+
+            svg {
+                font-size: 20px;
+                color: $--mainHeading;
+            }
+        }
+    }
+
+    // End Input
+    .left-section {
+        border: solid 1px $--mainBorder;
+        border-radius: 20px;
+        margin-bottom: 3em;
+
+        h2 {
+            @include heading;
+        }
+    }
+
+    .categories {
+        .plant-content-container {
+            display: grid;
+            border-radius: 20px;
+            border: solid 1px transparent;
+            background: #fbf7e8;
+            color: #808080;
+            padding: 20px;
+            .plant-content {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                border-bottom: dashed 1px $--mainBorder;
+                // color: $--mainLightGray;
+                margin-bottom: 1em;
+                padding-bottom: 1em;
+
+                .right {
+                    a {
+                        display: flex;
+                        font-weight: 500;
+                        gap: 0.5em;
+                        transition: $--mainTransition;
+                        &:hover{
+                            color: $--maingreenSecond;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //=========== Start Best Deals ===========
+
+    .best-deals {
+        margin-bottom: 6em;
+
+        h3 {
+            @include heading;
+        }
+        // Start stylling every box inside the best deals section.
+        .box-content{
+            border: solid 1px $--mainBorder2;
+            .img-container{
+                overflow: hidden;
+                img{
+                    transition: $--mainTransitionCalc;
+                }
+            }
+            &:hover{
+            .img-container{
+                    img{
+                        transform: scale(1.4) rotate(-15deg);
+                    }
+                }
+            }
+        }
+    }
+
+    //=========== End Best Deals ===========
+
+    //=========== Start Filter ===========
+
+    .filter-by-price {
+        margin-bottom: 6em;
+
+        h3 {
+            @include heading;
+        }
+
+        .input-container {
+            flex-direction: column;
+            align-items: start;
+            gap: 1em;
+            margin: 4em 0;
+
+            .range-filter-input {
+                width: 100%;
+                // color: $--maingreen;
+                padding: 0;
+                margin: 1em 0;
+            }
+
+            p {
+                width: 100%;
+                text-align: center;
+                // color: $--mainLightGray
+            }
+
+            button {
+                @include btn();
+                width: 40%;
+                padding: 8px;
+                border-radius: 10px;
+            }
+
+
+        }
+    }
+
+    //=========== End Filter ===========
+}
+
+
+// =============== 
+// Start Screen Responsive 
+// ===============
+
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .left-side {
+        display: none;
+    }
+}
+
+// =============== 
+// End Screen Responsive 
+// ===============

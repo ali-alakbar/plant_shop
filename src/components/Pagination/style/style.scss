@@ -1,0 +1,22 @@
+@import "../../../App";
+
+.pagination-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    .pagination {
+        display: flex;
+        gap: .5em;
+
+        li {
+            a {
+                padding: 10px 15px;
+                background: $--maingreen;
+                color: $--mainHeading;
+                font-weight: 600;
+            }
+        }
+    }
+}

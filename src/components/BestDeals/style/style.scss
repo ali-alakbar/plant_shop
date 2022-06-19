@@ -1,0 +1,44 @@
+@import "../../../App";
+
+
+
+.box-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    border: solid 1px $--mainBorder;
+    margin-bottom: 20px;
+    padding: 10px;
+    gap: 1em;
+
+    .img-container {
+        width: 100px;
+
+        img {
+            width: 100%;
+            margin-right: 1em;
+            border-radius: 20px;
+        }
+    }
+
+    .other-content {
+        display: grid;
+        gap: 1em;
+
+        h4 {
+            font-size: 17px;
+            cursor: pointer;
+
+            &:hover {
+                color: $--maingreenSecond;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            color: $--maingreen;
+        }
+    }
+}

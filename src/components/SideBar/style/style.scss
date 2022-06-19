@@ -1,0 +1,182 @@
+@import "../../../App";
+
+.shadow-page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.372);
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    transition: $--mainTransition;
+
+    .side-bar-box {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: $--mainWhite;
+        z-index: 110;
+        transition: $--mainTransition;
+        padding: 0 20px;
+
+        .heading-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 12.5vh;
+            border-bottom: solid 1px $--mainBorder;
+            margin-bottom: 3em;
+            
+            h3 {
+                font-family: $--mainFont;
+                font-size: 23px;
+                color: $--mainHeading;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+
+        .content {
+            text-align: center;
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: $--mainLightGray;
+            }
+        }
+    }
+
+    // ---------------------
+    .added-content {
+        max-height: 39vh;
+        height: 39vh;
+        overflow: auto;
+
+        .added-content-container {
+            display: flex;
+            gap: 0.7em;
+            align-items: center;
+            border-bottom: solid 1px #99999959;
+            padding: 0.7em 0;
+
+            .icon {
+                border: solid 1px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $--maingreenSecond;
+                    svg{
+                        color: $--maingreenSecond;
+                    }
+                }
+            }
+
+            .img-container {
+                width: 80px;
+                position: relative;
+            }
+        }
+
+        .food-info {
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+                color: $--mainHeading;
+                font-family: $--mainFont;
+            }
+
+            .price {
+                color: $--maingreenSecond;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .checkout-items {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 200;
+        background-color: $--mainWhite;
+        .total-price {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5em;
+            
+            h3 {
+                font-family: $--mainFont;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 20px;
+                color: $--mainHeading;
+            }
+        }
+
+        .links {
+            display: grid;
+            gap: .5em;
+
+            a {
+                @include btn;
+                font-size: 15px !important;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .checkout {
+                &:hover {
+                    background-color: $--maingreenSecond;
+                    color: $--mainWhite;
+                }
+            }
+
+            .view-cart {
+                background-color: $--mainWhite;
+                border-width: 1px;
+                border-color: $--mainBlack;
+
+                &:hover {
+                    border-width: 1px;
+                    border-color: $--maingreenSecond;
+                    background-color: $--maingreenSecond;
+                }
+            }
+        }
+    }
+}
+
+.active-side-bar {
+    opacity: 1;
+    pointer-events: auto;
+
+    .side-bar-box {
+        width: 340px;
+    }
+}
+
+// ==============
+// Start Responsivity
+// ==============
+
+@media (max-width: 1170px) {
+    .shadow-page {
+        display: none;
+    }
+}
+
+// ==============
+// Start Responsivity
+// ==============

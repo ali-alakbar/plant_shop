@@ -1,0 +1,94 @@
+@import "../../../App";
+
+
+.quote-section{
+    margin-bottom: 7rem;
+    .container{
+        display: grid;
+        grid-template-columns: auto 50%;
+        grid-auto-flow: dense;
+        direction: ltr;
+        padding: 0;
+        gap: 1rem;
+        
+        .left-side{
+            position: relative;
+            .main-bg{
+                width: 100%;
+                filter: grayscale(60%);
+                transition: all 1.5s ease-in-out;
+            }
+
+            // On hovering, make the image colorful
+            &:hover {
+                img {
+                    filter: grayscale(0%);
+                }
+            }
+            .png-rotate{
+                position: absolute;
+                top: -50px;
+                left: 50px;
+                transform: translateY(-50%);
+                z-index: 10;
+                animation: rotating 10s linear infinite;
+
+            }
+            .second-bg{
+                position: absolute;
+                left: 60%;
+                bottom: -80px;
+                transform: translateX(-50%);
+            }
+        }
+      
+    }
+}
+
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .quote-section{
+        .container{
+            .left-side{
+                .main-bg{
+                    filter: grayscale(0);
+                }
+                .second-bg{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .quote-section {
+        .container {
+            grid-auto-rows: auto auto;
+            grid-template-columns: none;
+            padding: 0 30px;
+            .left-side {
+                .second-bg{
+                    left: 90%;
+                    bottom: -40px;
+                    transform: translateX(-50%);
+                    width: 35%;
+                }
+
+            }
+        }
+    }
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

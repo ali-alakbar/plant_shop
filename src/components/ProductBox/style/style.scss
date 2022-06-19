@@ -1,0 +1,83 @@
+@import "../../../App";
+
+
+.item-box{
+    position: relative;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    border: solid 1px #eee;
+    padding-bottom: 1rem;
+    .img-container{
+        position: relative;
+        .onHide{
+            opacity: 1;
+            transition: $--mainTransition;
+            z-index: 12;
+            position: relative;
+        }
+        .noHide{
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    // Hovering on box, show another image
+    &:hover{
+        .img-container{
+            .onHide{
+                opacity:0;
+            }
+        }
+    }
+
+    .other-content{
+        width: 100%;
+        a{
+            font-family: $--mainFont;
+            font-size: 15px;
+            line-height: 18px;
+            text-transform: capitalize;
+            letter-spacing: .06rem;
+        }
+        // Rating of product
+        .product-rating{
+            margin-top: 1rem;
+        }
+
+    }
+    .icon-container-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 30px;
+        transition: $--mainTransition;
+        opacity: 0;
+        
+        
+        .icon-container{
+            width: fit-content;
+            padding: 10px 20px;
+            color: $--mainWhite;
+            background-color: $--maingreenSecond;
+            border-radius: 20px;
+            font-size: 14px;
+            letter-spacing: .06rem;
+            font-family: $--mainFont;
+            cursor: pointer;
+            transition: $--mainTransition;
+            &:hover{
+                background-color: $--maingreen;
+            }
+        }
+    }
+    &:hover{
+        .icon-container-wrapper{
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+@import "../../../App";
+
+.moving-bike {
+    position: relative;
+    background-color: #fbf7e8;
+    padding: 0 30px;
+    height: 90vh;
+    margin-bottom: 6rem;
+
+    .content-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+        height: 100%;
+        align-items: center;
+
+        // Stylling in General (includes the title, the paragraph, and the link)
+        h1 {
+            color: $--mainHeading;
+            font-size: 42px;
+            line-height: 45px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $--mainLightGray;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            @include btn();
+            font-weight: 700;
+            transition: $--mainTransition !important;
+
+        }
+
+        // Stylling the second sectino
+        .contentTwo {
+            text-align: end;
+        }
+    }
+
+    .bike-section-img {
+        position: relative;
+        transform: scale(1);
+        transition: $--mainTransition;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
+
+
+// ===================
+// Start Screen Responsive 
+// ===================
+/* Big Screens */
+@media (max-width: 1200px) {
+
+    .moving-bike {
+        .content-section {
+            gap: 2rem;
+
+            h1 {
+                font-size: 38px;
+            }
+        }
+    }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .moving-bike {
+        height: 160vh;
+
+        .content-section {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 5rem;
+
+            .content {
+                padding: 0 100px;
+
+                p {
+                    padding: 0 30px;
+                    line-height: 1.8;
+                }
+            }
+
+            .contentTwo {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .moving-bike {
+        height: 160vh;
+
+        .content-section {
+            .content {
+                padding: 0;
+            }
+
+            .bike-section-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// ===================
+// End Screen Responsive 
+// ===================

@@ -1,0 +1,26 @@
+@import "../../../App";
+
+    .catregory{
+        .container {
+            padding: 0;
+            margin-bottom: 5rem;
+            .link-container{
+                width: 100%;
+                text-align: end;
+                margin: 30px 0;
+            }
+        }
+    }
+
+/* Small Screens */
+@media (max-width: 768px) {
+
+    .catregory {
+        .container {
+            padding: 0 80px;
+            .link-container {
+                text-align: center;
+            }
+        }
+    }
+}

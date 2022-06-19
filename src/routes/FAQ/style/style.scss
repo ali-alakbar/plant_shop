@@ -1,0 +1,70 @@
+@import "../../../App";
+
+
+
+.faq-section {
+    .container {
+        .container-items {
+            .question-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 30px;
+                font-size: 17px;
+                color: $--mainHeading;
+                background-color: #fbf7e8;
+                margin-bottom: 10px;
+                border-radius: 7px;
+                cursor: pointer;
+            }
+
+            .hidden-content {
+                padding: 10px 30px;
+                color: $--mainLightGray;
+                transition: $--mainTransition;
+                opacity: 0;
+                line-height: 0;
+            }
+
+            .active-hidden-content {
+                line-height: 1.5;
+                opacity: 1;
+            }
+        }
+
+        .active-container-items {
+            .question-container {
+                background-color: $--maingreenSecond;
+            }
+        }
+    }
+}
+
+
+
+
+// ==============
+// Start Responsivity
+// ==============
+
+// Small Screens
+@media (max-width: 768px) {
+    .faq-section {
+        .container {
+            .container-items {
+                .question-container {
+                    font-size: 13px;
+                }
+
+                .active-hidden-content {
+                    font-size: 13px;
+                    line-height: 2;
+                }
+            }
+
+        }
+    }
+}
+
+// ==============
+// End Responsivity
+// ==============

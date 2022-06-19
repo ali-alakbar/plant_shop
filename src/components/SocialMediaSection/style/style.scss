@@ -1,0 +1,85 @@
+@import "../../../App";
+
+.socialMedia-section{
+    margin-bottom: 5rem;
+    .socialMedia-section-content{
+        .socialMedia-item{
+            text-align: center;
+            margin-bottom: 3rem;
+            a{
+                transition: $--mainTransition;
+                &:hover{
+                    color: $--maingreenSecond;
+                }
+                h2{
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            p{
+                color: $--mainLight;
+            }
+        }
+        .socialMedia-images{
+            display: grid;
+            grid-template-columns: 50% 1fr;
+            gap: 1rem;
+            padding: 0 30px;
+            // @include hoverImage;
+            img{
+                width: 100%;
+            }
+            .other-img-right{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 1rem;
+                .img-container{
+                    @include hoverImage;
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+            .main-img-left{
+                @include hoverImage;
+                // Box-hover is the "+" that appears when hovering on image.
+                .box-hover{
+                    left: 50%;
+                    top: 50%;
+                    z-index: 100;
+                    transform: translate(-50%, -50%);
+                }
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+/* Big Screens */
+@media (max-width: 1200px) {}
+/* Medium Screens */
+@media (max-width: 992px) {}
+/* Small Screens */
+@media (max-width: 768px) {
+    .socialMedia-section {
+        .socialMedia-section-content {
+            .socialMedia-images {
+                gap: 0;
+                grid-template-columns: none;
+                grid-template-rows: 50% 1fr;
+                .other-img-right {
+                    gap: 0;
+                }
+            }
+        }
+    }
+}
+// ===============================
+/* End Screen Responsive */
+// ===============================

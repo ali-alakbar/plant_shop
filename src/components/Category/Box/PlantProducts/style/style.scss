@@ -1,0 +1,137 @@
+@import "../../../../../App";
+
+
+    .other-details{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        
+        .left-side {
+            position: relative;
+            z-index: 10;
+            height: fit-content;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                border-top: 10px solid $--mainWhite;
+                border-bottom: 10px solid $--mainWhite;
+                transform: scaleX(0);
+                transition: $--mainTransitionCalc;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                border-left: 10px solid $--mainWhite;
+                border-right: 10px solid $--mainWhite;
+                transform: scaleY(0);
+                transition: $--mainTransitionCalc;
+            }
+            &:hover{
+                &::after,&::before{
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    
+        .right-side {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            .img-container {
+                position: relative;
+                text-align: center;
+                background: #f4f4f4;
+                width: 48%;
+                height: fit-content;
+                padding: 15px;
+                margin-bottom: 1rem;
+                transition: $--mainTransition;
+                // For the background of the image.
+                &::after{
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    background: #f4f4f4;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    z-index: -1;
+                    transform: rotate(180deg);
+                    text-align: center;
+                    margin: 0 auto;
+                    border-radius: 100%/100px 100px 0 0;
+                    opacity: 0;
+                    transition: $--mainTransitionTwo;
+                }
+                &:hover{
+                    background-color: transparent;
+                    &::after{
+                        opacity: 1;
+                        height: 84%;
+                    }
+                    h3{
+                        letter-spacing: 1px;
+                        color: $--maingreenSecond;
+                    }
+                }
+                img {
+                    width: initial;
+                }
+                h3{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $--maingreen;
+                    font-family: $--mainFont;
+                    transition: $--mainTransitionTwo;
+                    line-height: 20px;
+                }
+            }
+        }
+                
+}
+
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .other-details {
+        grid-template-columns: initial;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .other-details {
+        .right-side {
+            .img-container{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

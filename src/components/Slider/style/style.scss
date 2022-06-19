@@ -1,0 +1,72 @@
+@import "../../../App";
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin-bottom: 5rem;
+    .awssld{
+        height: 100%;
+    }
+    .awssld__bullets{
+        bottom: 0px;
+        z-index: 10;
+    }
+    .content {
+        text-align: center;
+        q {
+            font-size: 30px;
+            font-style: italic;
+            line-height: 50px;
+            color: $--maingreen;
+        }
+
+        p {
+            font-family: "Poppins", Sans-serif;
+            font-size: 16px;
+            color: $--mainBorder;
+            margin: 2rem 0
+        }
+    }
+}
+
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .right-side {
+        .content {
+            q {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .right-side {
+        padding: 0 20px;
+
+        .content {
+            q {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

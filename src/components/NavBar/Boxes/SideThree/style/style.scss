@@ -1,0 +1,28 @@
+@import "../../../../../App";
+
+// ============================
+// Stylling Thrid Side
+// ============================
+.side-3 {
+    order: 1;
+
+    .logo-container {
+        width: 85px;
+    }
+}
+// ===============================
+/* Start Screen Responsive */
+// ===============================
+
+/* Big Screens */
+@media (max-width: 1200px) {}
+
+/* Medium Screens */
+@media (max-width: 992px) {}
+
+/* Small Screens */
+@media (max-width: 768px) {}
+
+// ===============================
+/* End Screen Responsive */
+// ===============================

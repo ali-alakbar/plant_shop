@@ -279,6 +279,9 @@ textarea {
   -ms-grid-columns: auto 50%;
       grid-template-columns: auto 50%;
   grid-auto-flow: dense;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   direction: rtl;
   padding: 0;
   gap: 3rem;
@@ -299,6 +302,8 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: end;
+  height: 100%;
+  margin-bottom: 0;
 }
 
 .video-section .container .right-side h2 {
@@ -346,6 +351,7 @@ textarea {
 
 .video-section .container .left-side {
   position: relative;
+  display: block;
 }
 
 .video-section .container .left-side img {

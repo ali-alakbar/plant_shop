@@ -48,7 +48,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            
+            flex-direction: row;
             .img-container {
                 position: relative;
                 text-align: center;
@@ -118,6 +118,9 @@
         grid-template-rows: auto auto;
         justify-content: center;
         justify-items: center;
+        .right-side{
+            height: 100%;
+        }
     }
 }
 

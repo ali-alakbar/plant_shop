@@ -332,6 +332,10 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .other-details .right-side .img-container {
@@ -409,6 +413,9 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     justify-items: center;
+  }
+  .other-details .right-side {
+    height: 100%;
   }
 }
 

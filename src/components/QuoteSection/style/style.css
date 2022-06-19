@@ -270,7 +270,7 @@ textarea {
 }
 
 .quote-section {
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 
 .quote-section .container {
@@ -284,7 +284,23 @@ textarea {
   gap: 1rem;
 }
 
+.quote-section .container .right-side {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 0;
+}
+
+.quote-section .container .right-side .awssld__bullets {
+  bottom: -40px;
+}
+
+.quote-section .container .right-side .awssld__content .MuiRating-root {
+  display: none;
+}
+
 .quote-section .container .left-side {
+  display: block;
   position: relative;
 }
 
@@ -324,6 +340,9 @@ textarea {
 /* Big Screens */
 /* Medium Screens */
 @media (max-width: 992px) {
+  .quote-section .container .right-side {
+    height: 100%;
+  }
   .quote-section .container .left-side .main-bg {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
@@ -340,6 +359,9 @@ textarea {
     -ms-grid-columns: none;
         grid-template-columns: none;
     padding: 0 30px;
+  }
+  .quote-section .container .left-side {
+    margin-bottom: 3rem;
   }
   .quote-section .container .left-side .second-bg {
     left: 90%;

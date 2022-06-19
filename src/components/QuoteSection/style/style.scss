@@ -2,7 +2,7 @@
 
 
 .quote-section{
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     .container{
         display: grid;
         grid-template-columns: auto 50%;
@@ -11,7 +11,20 @@
         padding: 0;
         gap: 1rem;
         
+        .right-side{
+            height: fit-content;
+            margin-bottom: 0;
+            .awssld__bullets{
+                bottom: -40px;
+            }
+            .awssld__content{
+                .MuiRating-root {
+                    display: none;
+                }
+            }
+        }
         .left-side{
+            display: block;
             position: relative;
             .main-bg{
                 width: 100%;
@@ -57,6 +70,9 @@
 @media (max-width: 992px) {
     .quote-section{
         .container{
+            .right-side {
+                height: 100%;
+            }
             .left-side{
                 .main-bg{
                     filter: grayscale(0);
@@ -76,7 +92,9 @@
             grid-auto-rows: auto auto;
             grid-template-columns: none;
             padding: 0 30px;
+            
             .left-side {
+                margin-bottom: 3rem;
                 .second-bg{
                     left: 90%;
                     bottom: -40px;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# About
+A modern designed plants shop created from scratch fetching its data from an external JSON file using the technology of reactJS.
+
+# Features:
+
+    Fetching the data from an external JSON file.
+    Reusable components and buttons.
+    Fully responsive across various devices.
+    User friendly design that’s very easy to navigate.
+
+# Technologies:
+    SASS
+    ReactJS
+
+# Live:
+
+https://ali-alakbar.github.io/plants-shop-react/
+>>>>>>> ec09a7d (Create README.md)

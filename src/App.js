@@ -45,7 +45,7 @@ const App = () => {
         <NumberPopUp />
         <NavBar productsLength={products.length} cartLength={cart.length} />
         <Routes>
-          <Route path="plants-shop-react" element={<Home cart={cart} onAdd={onAdd} />} />
+          <Route path="/plants-shop-react" element={<Home cart={cart} onAdd={onAdd} />} />
           <Route path="Home" element={<Home cart={cart} onAdd={onAdd} />} />
           <Route path="Home" element={<Home cart={cart} onAdd={onAdd} />} />
           <Route
